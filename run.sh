@@ -1,3 +1,5 @@
 #! /bin/sh/
 
-cd out/build ; ./pragma.exe
+pragma_name="pragma.exe"
+
+cd out/build ; ./$pragma_name
