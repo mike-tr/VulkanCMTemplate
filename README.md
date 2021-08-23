@@ -11,11 +11,12 @@ make sure that CMake is installed.
 ### step 1:
 clone repository
 ### step 2: Option 1: (using the bash files)
-> configure.sh
+> sh configure.sh
 > 
-> build.sh
+> sh build.sh
 >
-> run.sh
+> sh run.sh
+( or the linux way )
 
 ### Option 2: (Compiling the cmake manually)
 > cmake -S . -B out/build/ -G
