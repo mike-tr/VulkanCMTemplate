@@ -1,6 +1,9 @@
 # [Bb][Uu][Ii][Ll][Dd]/
 
 out/*
+
+# CPP ignore
+
 # Prerequisites
 *.d
 
@@ -34,6 +37,8 @@ out/*
 *.out
 *.app
 
+# CMAKE ignore
+
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
@@ -45,3 +50,7 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+
+# vscode
+
+.vscode/

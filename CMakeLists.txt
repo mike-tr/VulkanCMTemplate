@@ -26,3 +26,16 @@ endif()
 # add the glfw and glm to the project
 add_subdirectory(external/glfw)
 add_subdirectory(external/glm)
+
+find_package(Vulkan REQUIRED)
+
+target_include_directories(${PROJECT_NAME}
+    PRIVATE ${Vulkan_INCLUDE_DIRS}
+    PRIVATE ${PROJECT_SOURCE_DIR}/external/glfw/include
+)
+
+target_link_libraries(${PROJECT_NAME} Vulkan::Vulkan glm glfw)
+
+# uncomment to have install
+# install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_CURRENT_SOURCE_DIR})
+# install(FILES "${PROJECT_BINARY_DIR}/Progconfig.hpp" DESTINATION include)
