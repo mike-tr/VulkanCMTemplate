@@ -16,6 +16,7 @@ clone repository
 > sh build.sh
 >
 > sh run.sh
+
 ( or the linux way )
 
 ### Option 2: (Compiling the cmake manually)
